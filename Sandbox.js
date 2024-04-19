@@ -15,13 +15,13 @@ async function startProgram() {
 */
 async function startProgram() {
 
-	setMainLed({ r: 0, g: 0, b: 255 });
+	setMainLed({ r: 255, g: 255, b: 255 });
 
-	await speak("Hello Square", true);
+	await speak("Hello Max", true);
 
 	await delay(1);
 
-	for (var _i1 = 0; _i1 < 4; _i1++) {
+	for (var TurnNumber = 0; TurnNumber < 4; TurnNumber++) {
 
 		setMainLed(getRandomColor());
 
