@@ -13,6 +13,8 @@ async function startProgram() {
 	setSpeed(0);
 }
 */
+
+/*
 async function startProgram() {
 
 	setMainLed({ r: 255, g: 255, b: 255 });
@@ -34,3 +36,26 @@ async function startProgram() {
 	}
 
 }
+*/
+async function startProgram() {
+
+	setMainLed({ r: 255, g: 255, b: 255 });
+
+	await speak("Hello There", true);
+
+	await delay(1);
+
+	for (var TurnNumber = 0; TurnNumber < 4; TurnNumber++) {
+
+		setMainLed(getRandomColor());
+
+		await Sound.Sports.RefereeWhistleDouble.play(true);
+
+		await roll((getHeading() + 90), 90, 1);
+
+		await delay(0.5);
+
+	}
+
+}
+
