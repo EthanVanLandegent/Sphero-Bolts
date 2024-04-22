@@ -25,7 +25,7 @@ async function startProgram() {
 
 		setMainLed(getRandomColor());
 
-		await Sound.Game.Coin.play(true);
+		await Sound.Sports.RefereeWhistleDouble.play(true);
 
 		await roll((getHeading() + 90), 60, 1);
 
