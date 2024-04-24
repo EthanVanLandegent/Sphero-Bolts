@@ -6,5 +6,6 @@
 // Program URL: https://edu.sphero.com/program/16752539/edit
 
 async function startProgram() {
-	// Write code here
+	//Maxwell Uppal
+	await roll((getHeading() + 35), 120, 1.57);
 }
