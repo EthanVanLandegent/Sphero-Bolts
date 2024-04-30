@@ -12,9 +12,9 @@ async function startProgram() {
 	// Programmer: Ethan VanLandegent - Blue LED Checkpoint Commit - Date:
 	await roll((getHeading() + 0), 50, 3.5);
 	setMainLed({ r: 0, g: 0, b: 255 });
-
 	//Programmer: Maxwell Uppal - Sound One Checkpoint Commit - Date:
-
+	await roll((getHeading() + 90), 50, 2.4);
+	await Sound.ScienceFiction.Blaster.play(true);
 
 
 	//Programmer: Ethan VanLandegent - Red LED Checkpoint Commit - Date: 
