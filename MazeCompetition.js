@@ -6,21 +6,18 @@
 // Program URL: https://edu.sphero.com/program/16788337/edit
 
 async function startProgram() {
-	// Programmer: Maxwell Uppal - Start Text & Audio Checkpoint Commit - Date:
+	// Programmer: Maxwell Uppal - Start Text & Audio Checkpoint Commit - Date: 4/30/24
 	await scrollMatrixText('Start', { r: 66, g: 56, b: 255 }, 30, true)
 	await speak("Start", true);
-	// Programmer: Ethan VanLandegent - Blue LED Checkpoint Commit - Date:
+	// Programmer: Ethan VanLandegent - Blue LED Checkpoint Commit - Date: 4/30/24
 	await roll((getHeading() + 0), 50, 3.5);
 	setMainLed({ r: 0, g: 0, b: 255 });
-	//Programmer: Maxwell Uppal - Sound One Checkpoint Commit - Date:
-	await roll((getHeading() + 90), 50, 2.4);
+	//Programmer: Maxwell Uppal - Sound One Checkpoint Commit - Date: 4/30/24
+	await roll((getHeading() + 90), 50, 2.6);
 	await Sound.ScienceFiction.Blaster.play(true);
-
-
-	//Programmer: Ethan VanLandegent - Red LED Checkpoint Commit - Date: 
-
-
-
+	//Programmer: Ethan VanLandegent - Red LED Checkpoint Commit - Date: 5/1/24
+	await roll((getHeading() + 90), 50, 1.92);
+	await roll((getHeading() + 45), 50, 1.4);
 	//Programmer: Maxwell Uppal - Sound Two Checkpoint Commit - Date:
 
 
